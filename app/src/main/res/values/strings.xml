@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UnderstandLifeCycle</string>
+    <string name="go_to_activity_c">Go To Activity C</string>
 </resources>

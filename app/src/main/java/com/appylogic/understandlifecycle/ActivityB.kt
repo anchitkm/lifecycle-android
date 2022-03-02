@@ -1,8 +1,10 @@
 package com.appylogic.understandlifecycle
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 
 class ActivityB : AppCompatActivity() {
 
@@ -11,6 +13,10 @@ class ActivityB : AppCompatActivity() {
         Log.e(TAG,"OnCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
+        findViewById<Button>(R.id.btn_submit_b).setOnClickListener {
+            startActivity(Intent(this,ActivityCTransparent::class.java)) // Transparent Activity
+
+        }
     }
 
 

@@ -9,6 +9,7 @@ class ActivityCTransparent : AppCompatActivity() {
     val TAG="ActivityC"
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.e(TAG,"OnCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
     }

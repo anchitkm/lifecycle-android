@@ -15,8 +15,6 @@ class ActivityA : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.btn_submit).setOnClickListener {
             startActivity(Intent(this,ActivityB::class.java)) // Normal Activity
-//            startActivity(Intent(this,ActivityCTransparent::class.java)) // Transparent Activity
-
         }
     }
 
